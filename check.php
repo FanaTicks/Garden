@@ -16,15 +16,16 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash']))
     // Генерируємо хеш на основі Id_Acount і Hash_Acount з бази даних
     $hashToCheck = $userdata['Hash_Acount'];
 
-    if ($hash === $hashToCheck && ($userdata['Ip_Acount'] === $_SERVER['REMOTE_ADDR'] || $userdata['Ip_Acount'] === "0"))
+    if ($hash === $hashToCheck && ($userdata['Ip_Acount'] === $_SERVER['REMOTE_ADDR'] || $userdata['Ip_Acount'] === "0" || $userdata['Ip_Acount'] === "0.0.0.0"))
     {
         // Переадресовываем браузер на страницу проверки нашего скрипта
         header("Location: main.php");
     }
     else
     {
-		
-		print " $hash $hashToCheck ";
+        $userdata1=$userdata['Ip_Acount'];
+            $userdata2=$_SERVER['REMOTE_ADDR'];
+		print " $hash $hashToCheck $userdata1 $userdata2";
         setcookie("id", "", time() - 3600*24*30*12, "/");
         setcookie("hash", "", time() - 3600*24*30*12, "/", null, null, true); // httponly !!!
         

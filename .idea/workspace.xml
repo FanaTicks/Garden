@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07832595-09c3-4f9b-b8b1-c573257a6370" name="Changes" comment="">
+    <list default="true" id="07832595-09c3-4f9b-b8b1-c573257a6370" name="Changes" comment="Add 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/check.php" beforeDir="false" afterPath="$PROJECT_DIR$/check.php" afterDir="false" />
     </list>
@@ -66,8 +66,17 @@
       <updated>1690353260122</updated>
       <workItem from="1690353261362" duration="768000" />
       <workItem from="1690368781278" duration="18000" />
-      <workItem from="1690368811409" duration="4017000" />
+      <workItem from="1690368811409" duration="4739000" />
+      <workItem from="1690453441056" duration="4769000" />
     </task>
+    <task id="LOCAL-00001" summary="Add 2">
+      <created>1690394848655</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690394848655</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,5 +92,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add 2" />
   </component>
 </project>
