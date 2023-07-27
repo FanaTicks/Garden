@@ -19,7 +19,7 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash']))
     if ($hash === $hashToCheck && ($userdata['Ip_Acount'] === $_SERVER['REMOTE_ADDR'] || $userdata['Ip_Acount'] === "0" || $userdata['Ip_Acount'] === "0.0.0.0"))
     {
         // Переадресовываем браузер на страницу проверки нашего скрипта
-        header("Location: main.php");
+        header("Location: home_page.php");
     }
     else
     {
