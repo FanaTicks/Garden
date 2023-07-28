@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07832595-09c3-4f9b-b8b1-c573257a6370" name="Changes" comment="Add insert to db">
+    <list default="true" id="07832595-09c3-4f9b-b8b1-c573257a6370" name="Changes" comment="Add file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check.php" beforeDir="false" afterPath="$PROJECT_DIR$/check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/Запит.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/Запит.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,8 @@
       <workItem from="1690368781278" duration="18000" />
       <workItem from="1690368811409" duration="4739000" />
       <workItem from="1690453441056" duration="5827000" />
-      <workItem from="1690481796157" duration="670000" />
+      <workItem from="1690481796157" duration="1571000" />
+      <workItem from="1690523459282" duration="1723000" />
     </task>
     <task id="LOCAL-00001" summary="Add 2">
       <created>1690394848655</created>
@@ -84,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690459552504</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add file">
+      <created>1690482493317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690482493317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add 2" />
     <MESSAGE value="Add insert to db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add insert to db" />
+    <MESSAGE value="Add file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add file" />
   </component>
 </project>
