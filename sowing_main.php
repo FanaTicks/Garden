@@ -7,6 +7,8 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
         header("Location: new_crop.php");
     } elseif (isset($_POST['update'])) {
         header("Location: update_crop.php");
+    }elseif (isset($_POST['back'])) {
+        header("Location: home_page.php");
     }
 
     $id = intval($_COOKIE['id']);
@@ -35,4 +37,5 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
 <form method="POST">
     <input name="add" type="submit" value="Додати новий засів">
     <input name="update" type="submit" value="Редагувати засів">
+    <input name="back" type="submit" value="Назад">
 </form>

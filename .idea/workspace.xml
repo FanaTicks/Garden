@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="07832595-09c3-4f9b-b8b1-c573257a6370" name="Changes" comment="Edit sowing_details">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sowing_details.php" beforeDir="false" afterPath="$PROJECT_DIR$/sowing_details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_crop.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_crop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sowing_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/sowing_main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <workItem from="1690368811409" duration="4739000" />
       <workItem from="1690453441056" duration="5827000" />
       <workItem from="1690481796157" duration="1571000" />
-      <workItem from="1690523459282" duration="3516000" />
+      <workItem from="1690523459282" duration="4103000" />
     </task>
     <task id="LOCAL-00001" summary="Add 2">
       <created>1690394848655</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690525961210</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Edit sowing_details">
+      <created>1690527096003</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690527096003</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -9,7 +9,13 @@
 if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
     $link = mysqli_connect("localhost", "root", "admin", "Garden");
 
-// Fetch seed names from the Seed table
+    if (isset($_POST['back'])) {
+        header("Location: sowing_main.php");
+    } elseif (isset($_POST['home_page'])) {
+        header("Location: home_page.php");
+    }
+
+    // Fetch seed names from the Seed table
     $result = mysqli_query($link, "SELECT * FROM Seed");
     $options = "";
     while ($row = mysqli_fetch_assoc($result)) {
@@ -28,7 +34,7 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
         $idAcountRow = mysqli_fetch_assoc($result);
         $idAcount = $idAcountRow['Id_Acount'];
 
-// Insert the sowing into the Sowing table
+        // Insert the sowing into the Sowing table
         mysqli_query($link, "INSERT INTO Sowing (Name_Sowing, Number_Of_Plots_Area, ID_Acount) VALUES ('$sowingName', $numPlots , $idAcount)");
 
         $idSowing = mysqli_insert_id($link); // Get the ID of the last inserted sowing
@@ -65,6 +71,11 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
     <div id="plotsContainer"></div>
 
     <button name="submit" type="submit" >Зберегти</button>
+</form>
+
+<form method="POST">
+    <input name="back" type="submit" value="Назад">
+    <input name="home_page" type="submit" value="На головну сторінку">
 </form>
 
 <script>
