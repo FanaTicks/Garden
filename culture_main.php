@@ -5,9 +5,10 @@ $link = mysqli_connect("localhost", "root", "admin", "Garden");
 if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
     if (isset($_POST['add'])) {
         header("Location: new_culture.php");
-    } elseif (isset($_POST['update'])) {
-        header("Location: update_culture.php");
-    }elseif (isset($_POST['back'])) {
+    } elseif (isset($_POST['cultureId'])) {
+        $idCulture = $_POST['cultureId'];
+        header("Location: update_culture.php?id=$idCulture");
+    } elseif (isset($_POST['back'])) {
         header("Location: home_page.php");
     }
 
@@ -15,12 +16,12 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
 
     if (mysqli_num_rows($result) > 0) {
         echo "<table>";
-        echo "<tr><th>Назва культури</th></tr>";
+        echo "<tr><th>Назва культури</th><th>Редагування</th><th></th></tr>";
 
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<tr>";
-            echo "<td>" . $row['Id_Culture'] . "</td>";
             echo "<td>" . $row['Name_Culture'] . "</td>";
+            echo "<td><form method='POST'><button name='cultureId' type='submit' value='" . $row['Id_Culture'] . "'>Редагувати</button></form></td>";
             echo "</tr>";
         }
 
@@ -35,6 +36,5 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
 
 <form method="POST">
     <input name="add" type="submit" value="Додати нову культуру">
-    <input name="update" type="submit" value="Редагувати культуру">
     <input name="back" type="submit" value="Назад">
 </form>

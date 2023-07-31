@@ -8,6 +8,8 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash']))
         header("Location: culture_main.php");
     }elseif (isset($_POST['seed'])){
         header("Location: seed_main.php");
+    }elseif (isset($_POST['fertilizers_herbicides'])){
+        header("Location: fertilizers_main.php");
     }
 
 } else
@@ -22,5 +24,5 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash']))
     <input name="seed" type="submit" value="Насіння">
     <input name="result" type="submit" value="Результати">
     <input name="analytics" type="submit" value="Аналітика">
-    <input name="fertilizers_erbicides" type="submit" value="Добрива та гербіциди">
+    <input name="fertilizers_herbicides" type="submit" value="Добрива та гербіциди">
 </form>

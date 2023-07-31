@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="07832595-09c3-4f9b-b8b1-c573257a6370" name="Changes" comment="Add update crop">
+      <change afterPath="$PROJECT_DIR$/fertilizer_evaluation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fertilizers_main.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new_fertilizer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/update_fertilizer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/Запит.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/Запит.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/culture_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/culture_main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/home_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_culture.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_culture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_seed.php" beforeDir="false" afterPath="$PROJECT_DIR$/new_seed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seed_main.php" beforeDir="false" afterPath="$PROJECT_DIR$/seed_main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_culture.php" beforeDir="false" afterPath="$PROJECT_DIR$/update_culture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_seed.php" beforeDir="false" afterPath="$PROJECT_DIR$/update_seed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alex/Desktop/Garden&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Alex/Desktop/Garden",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
+    <configuration name="login.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Garden/login.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Garden" />
       <method v="2">
@@ -45,9 +68,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="login.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Garden/login.php" useBuiltInWebServerPort="true">
-      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,6 +85,7 @@
       <workItem from="1690481796157" duration="1571000" />
       <workItem from="1690523459282" duration="7847000" />
       <workItem from="1690567886390" duration="257000" />
+      <workItem from="1690820381959" duration="4249000" />
     </task>
     <task id="LOCAL-00001" summary="Add 2">
       <created>1690394848655</created>

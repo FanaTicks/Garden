@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Редагування насіння</title>
+    <title>Редагування добрива</title>
 </head>
 <body>
 <?php
 $link = mysqli_connect("localhost", "root", "admin", "Garden");
 
 if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
-    $idSeed = intval($_GET['id']);
+    $idFertilizer = intval($_GET['id']);
 
     if (isset($_POST['back'])) {
-        header("Location: seed_main.php");
+        header("Location: fertilizers_main.php");
     } elseif (isset($_POST['home_page'])) {
         header("Location: home_page.php");
     }
 
     if (isset($_POST['submit'])) {
-        // Update the existing seed with the data from the form
-        $nameSeed = $_POST['seedName'];
+        // Update the existing fertilizer with the data from the form
+        $nameFertilizer = $_POST['fertilizerName'];
         $idCulture = $_POST['cultureId'];
 
-        // Update the seed in the Seed table
-        mysqli_query($link, "UPDATE Seed SET Name_Seed = '$nameSeed', ID_Culture = $idCulture WHERE Id_Seed = $idSeed");
+        // Update the fertilizer in the Fertilizers table
+        mysqli_query($link, "UPDATE Fertilizers SET Name_fertilizer = '$nameFertilizer', ID_Culture = $idCulture WHERE ID_fertilizer = $idFertilizer");
     } else {
-        // Fetch the existing seed data to populate the form fields
-        $seedResult = mysqli_query($link, "SELECT * FROM Seed WHERE Id_Seed = $idSeed");
-        $seed = mysqli_fetch_assoc($seedResult);
-        $nameSeed = $seed['Name_Seed'];
-        $idCulture = $seed['ID_Culture'];
+        // Fetch the existing fertilizer data to populate the form fields
+        $fertilizerResult = mysqli_query($link, "SELECT * FROM Fertilizers WHERE ID_fertilizer = $idFertilizer");
+        $fertilizer = mysqli_fetch_assoc($fertilizerResult);
+        $nameFertilizer = $fertilizer['Name_fertilizer'];
+        $idCulture = $fertilizer['ID_Culture'];
     }
 
     // Fetch all the cultures
@@ -38,8 +38,8 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
 ?>
 
 <form method="post">
-    <label>Назва насіння:
-        <input type="text" name="seedName" required value="<?php echo $nameSeed; ?>">
+    <label>Назва добрива:
+        <input type="text" name="fertilizerName" required value="<?php echo $nameFertilizer; ?>">
     </label>
     <br>
     <label>Виберіть культуру:

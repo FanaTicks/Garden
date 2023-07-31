@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Насіння</title>
+    <title>Добрива</title>
 </head>
 <body>
 <?php
@@ -13,24 +13,24 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
     $cultures = mysqli_fetch_all($culturesResult, MYSQLI_ASSOC);
 
     if (isset($_POST['back'])) {
-        header("Location: seed_main.php");
+        header("Location: fertilizers_main.php");
     } elseif (isset($_POST['home_page'])) {
         header("Location: home_page.php");
     }
 
     if (isset($_POST['submit'])) {
-        $nameSeed = $_POST['nameSeed'];
+        $nameFertilizer = $_POST['nameFertilizer'];
         $idCulture = $_POST['culture'];
 
-        // Insert the seed into the Seed table
-        mysqli_query($link, "INSERT INTO Seed (Name_Seed, ID_Culture) VALUES ('$nameSeed', $idCulture)");
+        // Insert the fertilizer into the Fertilizers table
+        mysqli_query($link, "INSERT INTO Fertilizers (Name_fertilizer, ID_Culture) VALUES ('$nameFertilizer', $idCulture)");
     }
 }
 ?>
 
 <form method="post">
-    <label>Назва насіння:
-        <input type="text" name="nameSeed" required>
+    <label>Назва добрива:
+        <input type="text" name="nameFertilizer" required>
     </label>
     <br>
     <label>Культура:
@@ -43,7 +43,7 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
         </select>
     </label>
     <br>
-    <button name="submit" type="submit" >Зберегти</button>
+    <button name="submit" type="submit">Зберегти</button>
 </form>
 
 <form method="POST">
