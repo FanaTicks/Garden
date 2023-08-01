@@ -18,10 +18,11 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
 
     if (isset($_POST['submit'])) {
         // Insert the evaluation into the Evaluation table
+        $usageDate = $_POST['usageDate'];
         $assessment = $_POST['assessment'];
         $description = $_POST['description'];
 
-        mysqli_query($link, "INSERT INTO Evaluation (ID_fertilizer, Assessment, Description) VALUES ($idFertilizer, $assessment, '$description')");
+        mysqli_query($link, "INSERT INTO Evaluation (ID_fertilizer, Usage_Date, Assessment, Description) VALUES ($idFertilizer, '$usageDate', $assessment, '$description')");
     } else {
         // Fetch the existing fertilizer data to display the name and culture
         $fertilizerResult = mysqli_query($link, "SELECT Fertilizers.*, Culture.Name_Culture FROM Fertilizers JOIN Culture ON Fertilizers.ID_Culture = Culture.Id_Culture WHERE Fertilizers.ID_fertilizer = $idFertilizer");
@@ -39,6 +40,10 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
     <br>
     <label>Культура:
         <input type="text" name="cultureName" readonly value="<?php echo $nameCulture; ?>">
+    </label>
+    <br>
+    <label>Дата використання:
+        <input type="date" name="usageDate" required>
     </label>
     <br>
     <label>Оцінка:
