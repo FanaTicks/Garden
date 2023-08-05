@@ -12,7 +12,7 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
     if (isset($_POST['back'])) {
         header("Location: sowing_main.php");
     } elseif (isset($_POST['home_page'])) {
-        header("Location: home_page.php");
+        header("Location: home_page.html");
     }
 
     // Fetch seed names from the Seed table
@@ -54,6 +54,8 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
                 mysqli_query($link, "INSERT INTO Line (ID_Seed, ID_Area) VALUES ($idSeed, $idArea)");
             }
         }
+        header("Location: sowing_main.php");
+        exit();
     }
 }
 ?>

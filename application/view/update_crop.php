@@ -13,7 +13,7 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
     if (isset($_POST['back'])) {
         header("Location: sowing_main.php");
     } elseif (isset($_POST['home_page'])) {
-        header("Location: home_page.php");
+        header("Location: home_page.html");
     }
 
     // Fetch seed names from the Seed table
@@ -59,6 +59,8 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
                 }
             }
         }
+        header("Location: sowing_main.php");
+        exit(); //
     } else {
         // Fetch the existing sowing data to populate the form fields
         $result = mysqli_query($link, "SELECT * FROM Sowing WHERE Id_Sowing = $idSowing");
@@ -129,7 +131,7 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
         ?>
     </div>
 
-    <button name="submit" type="submit" >Зберегти</button>
+    <button type="submit" name="submit">Зберегти</button>
 </form>
 
 <form method="POST">
@@ -177,4 +179,3 @@ if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
 </script>
 </body>
 </html>
-
